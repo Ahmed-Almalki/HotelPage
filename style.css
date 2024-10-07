@@ -2,10 +2,10 @@
 
 :root {
     --bgColor: #a27d39;
-    --bgColor2: #f9f9f9;
-    --accentColor: #000;
+    --bgColor2: #000000;
+    --accentColor: #ffffff;
     --font: 'Karla', sans-serif;
-    --delay: .10s;
+    --delay: .2s;
 }
 
 body {
@@ -25,12 +25,13 @@ body {
 
 #profilePicture, #profilePicture img {
     position: relative;
-    width: 96px;
-    height: 96px;
+    width: 170px;
+    /*height: 96px;*/
     display: block;
     margin: 40px auto 20px;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     -webkit-tap-highlight-color: transparent;
+    
 }
 
 #userName {
@@ -50,13 +51,15 @@ body {
     width: auto;
     display: block;
     margin: 27px auto;
+
 }
 
 .link {
+    transition: 0.5s;
     position: relative;
     background-color: transparent;
     color: var(--accentColor);
-    border: solid var(--accentColor) 2px;
+   /* border: solid var(--accentColor) 2px;*/
     border-radius: 10px;
     font-size: 1rem;
     text-align: center;
@@ -68,19 +71,39 @@ body {
     text-decoration: none;
     /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
     -webkit-tap-highlight-color: transparent;
+    display: flex;align-items: center;justify-content: center;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
 
+.icon{
+    transition: 0.5s;
+    filter: invert(1);
+}
 @media (hover: hover) {
     .link:hover {
-        background-color: var(--accentColor);
-        color: var(--bgColor);
+        transition: 0.5s;
+        background-color:  #a1865582;
+        box-shadow: #a27d3959 0px 5px 15px;
+        color: #000000;
+    .icon{
+        transition: 0.5s;
+            filter: invert(0);
+        }
     }
 }
 
 .link:active {
-    background-color: var(--accentColor);
-    color: var(--bgColor);
+    transition: 0.5s;
+    background-color:  #a27d3982;
+    box-shadow: #a27d3959 0px 5px 15px;
+    color: #000000;
+.icon{
+    transition: 0.5s;
+        filter: invert(0);
+    }
 }
+
+
 
 #hashtag {
     position: relative;
@@ -91,6 +114,7 @@ body {
     font-family: var(--font);
     width: 100%;
     text-align: center;
+    
 
     /*  animation   */
     overflow: hidden;
@@ -161,15 +185,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 400px;
+    max-width: 600px;
     /* max-height: 500px; */
     width: auto;
     height: auto;
     margin: 56px;
-    background-color: var(--bgColor);
     /* transform: rotate(32deg); */
     transform: scale(0);
     transition: .5s ease-in-out;
+    background-color: #1e1d1b;
+    background-image: linear-gradient(315deg, #ab72019c 0%, #cc9934 74%);
+    border-radius: 10px;
 }
 
 .popup-quote {
