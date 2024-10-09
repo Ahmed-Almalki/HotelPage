@@ -84,14 +84,11 @@ body {
         background-color:  #a1865582;
         box-shadow: #a27d3959 0px 5px 15px;
         color: #000000;
+        border: solid #000 1px;
     .icon{
         transition: 0.5s;
             filter: invert(0);
         }
-        .link{
-            border: solid #000 1px;
-            transition: 0.5s;
-            }
     }
 }
 
