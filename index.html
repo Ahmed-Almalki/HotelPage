@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -201,12 +202,39 @@
       <a class="popup-close" onclick="history.back()">&times;</a>
     </div>
   </div>
+  <!-- Safety Guide -->
+<div class="overlay" id="SafetyGuide">
+  <div class="popup">
+    <div class="popup-quote" style="font-size: 1rem;">
+      <br>
+      <div style="text-align:right; direction:rtl;">
+        يرجى اختيار لغة دليل السلامة
+      </div>
+      <br>
+
+      <a href="Safety_Guide_AR.pdf" target="_blank" style="text-align:right; direction:rtl; display:block; cursor:pointer;">
+        <u>قراءة دليل السلامة باللغة العربية</u>
+      </a>
+
+      <br>
+
+      <a href="Safety_Guide_EN.pdf" target="_blank" style="text-align:left; display:block; cursor:pointer;">
+        <u>Read Safety Guide in English</u>
+      </a>
+    </div>
+    <a class="popup-close" onclick="history.back()">&times;</a>
+  </div>
+</div>
+
+<!--the end of Safety-->
+
+  
 
 
   <div id="links">
 
     <a class="link">
-      <i style="  width: 40%; font-weight: bold; " onclick="location.href='#TailoringEN'"">Tailoring & Shoeshine</i>
+      <i style="  width: 40%; font-weight: bold; " onclick="location.href='#TailoringEN'">Tailoring & Shoeshine</i>
       <i style=" width: 20%; text-align: center;" onclick="location.href='#Tailoring'"><img class="icon"
           src="./Sewing.png" style=" width: 50px; height: 50px;"></i>
       <i style="  width: 40%; font-weight: bold; " onclick="location.href='#TailoringAR'">خدمة الخياطة و تلميع
@@ -250,7 +278,89 @@
           style=" width: 50px; height: 50px;"></i>
       <i style="  width: 40%; font-weight: bold;" onclick="location.href='#NewspapersAR'">أخبار اليوم</i>
     </a>
+
+   
+<!--here-->
+<a class="link">
+  <i style="width:40%; font-weight:bold;"
+     onclick="location.href='#SafetyGuide'">
+    Safety Guide
+  </i>
+
+  <i style="width:20%; text-align:center;"
+     onclick="location.href='#SafetyGuide'">
+    <img class="icon" src="./work-safety1.png" style="width:50px; height:50px;">
+  </i>
+
+  <i style="width:40%; font-weight:bold;"
+     onclick="location.href='#SafetyGuide'">
+    دليل السلامة
+  </i>
+
+</a>
+
+<!-- Make a Difference Button -->
+<div id="makeDifferenceButton" 
+     style="width:50px; height:50px; background:green; color:white; display:flex; align-items:center; justify-content:center; cursor:pointer; font-weight:bold; border-radius:5px; position:fixed; bottom:20px; right:20px; z-index:9999;">
+  🌿
+</div>
+
+<!-- Make a Difference Popup (Arabic + English) -->
+<div id="MakeDifferencePopup" 
+     style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:9998;">
+  <div style="background:#fff; max-width:900px; margin:5% auto; padding:20px; border-radius:8px; display:flex; gap:20px; flex-wrap:wrap; position:relative;">
+
+    <!-- Arabic -->
+    <div style="flex:1; direction:ltr; text-align:left; font-size:1rem; overflow-y:auto; max-height:70vh; min-width:300px;">
+      <h2 style="color: green;">Make a Difference</h2>
+      <p> Our "Conserve to preserve" programme helps us save water and energy in all of our laundry facilities.If you'd like to help</p>
+        <p style="color: green;"><strong>if you'd like to help </strong></p>
+      <p>it's really simple. Your Makkah Hotel & Tower Collection linens and towels are freshly laundered for your arrival. We give you the choice for when you would like to have them changed.</p>
+      <p style="color: green;"><strong>BED LINENS</strong></p>
+      <p>Our standard is to change your bed linens every three days and again after Check-Out. If you would like your linens to be changed sooner, please place this card on your pillow in the morning.</p>
+      <p style="color: green;"><strong>BATH TOWELS</strong></p>
+      <p>Bath towels should be placed on the hook or towel bar to use again. if you leave a towel on the floor, it will be picked up and launderd.</p>
+    </div>
+
+    <!-- English -->
+   
+ <div style="flex:1; direction:rtl; text-align:right; font-size:1rem; overflow-y:auto; max-height:70vh; min-width:300px;">
+      <h2 style="color:green;">اصنع فرقا</h2>
+      <p>إن برنامجنا ( حافظ عليها تحفظ عالمك ) يساعد على توفير المياه والطاقة في كافة مرافقنا الخاصة بغسيل الملابس</p>
+      <p style="color: green;"><strong>إذا كنت ترغب بالمساعدة</strong></p>
+      <p>الأمر بغاية البساطة. مجموعة بياضات و مناشف فندق وأبراج مكة الخاصة بك مغسولة حديثاً قبل وصولك. نحن نترك لك الإختيار لطلب تبديلها وقتما ترغب بذلك.
+
+      </p>
+      <p style="color: green;"><strong>بياضات السرير</strong></p>
+      <p>الفتره القياسية التي نعتمدها لاستبدال بياضات السرير بأخرى جديدة هي كل ثلاثة أيام ومجدداً عند تسجيل الخروج من الفندق . في حال كنت ترغب بتبديلها قبل ذلك, يرجى وضع هذه البطاقة على وسادتك في الصباح
+      <p style="color: green;"><strong>مناشف الحمام</strong></p>
+      <p>
+        يرجى وضع مناشف الحمام على علاقة الملابس في الحمام أو على منضدة المناشف لاستخدامها مجدداً. اذا تركت المنشفة على الارض , سيتم التقاطها وغسلها
+</p>
+    </div>
+    <!-- Close Button -->
+    <a onclick="document.getElementById('MakeDifferencePopup').style.display='none'" 
+       style="position:absolute; top:10px; right:15px; font-size:2rem; text-decoration:none; color:#000; cursor:pointer;">&times;</a>
   </div>
+</div>
+
+<!-- Script to open popup -->
+<script>
+  document.getElementById('makeDifferenceButton').onclick = function() {
+    document.getElementById('MakeDifferencePopup').style.display = 'block';
+  };
+</script>
+
+<script>
+  console.log("Script loaded");
+  document.getElementById('makeDifferenceButton').onclick = function() {
+    console.log("Button clicked");
+    document.getElementById('MakeDifferencePopup').style.display = 'block';
+  };
+</script>
+
+
+
 </body>
 
 </html>
